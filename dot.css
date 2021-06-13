@@ -1,0 +1,248 @@
+body,p,samp,h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.nav-bg{
+    background-color: #E0E0E0;    
+}
+
+/* Start Menu */
+
+ul.our-primary-menu{
+
+}
+ul.our-primary-menu li{
+
+}
+ul.our-primary-menu li a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 25px;
+	color: #111;
+	font-size: 12px;
+	font-weight: 500;
+}
+ul.our-primary-menu li a:hover{
+   color: blue;
+   text-shadow: 1px 1px 2px #fff;
+}
+
+/* DropDown Menu  Css*/
+
+ul.our-primary-menu li{
+    position: relative;
+
+}
+ul.our-primary-menu li ul {
+	position: absolute;
+	width: 200px;
+	left: 18.4px;
+	top: 135%;
+	background: #fafafa;
+	list-style: none;
+	padding: 12px;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .4s ease-in-out;
+}
+ul.our-primary-menu li ul li{
+    flex-direction: column;
+}
+ul.our-primary-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 129%;
+}
+ul.our-primary-menu li ul li a{
+    background: blue;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+ul.our-primary-menu li ul li a:hover{
+  
+}
+
+/* Line Section */
+
+.line{
+    position: relative;
+}
+.line::hover {
+    color: #3763EB;
+    background-color: #3763EB;
+}
+.line::after {
+	content: "";
+	width: 0;
+	position: absolute;
+	top: 118%;
+	left: 23px;
+	height: 4px;
+	display: block;
+	background-color: #3763EB;
+	transition: .5s;
+}
+.line:hover::after {
+    width: 60%;
+}
+.line-active{
+    position: relative;
+}
+.line-active::after {
+	content: "";
+	width: 40%;
+	position: absolute;
+	top: 118%;
+	left: 23px;
+	height: 4px;
+	display: block;
+	background-color: #3763EB;
+	transition: .5s;
+}
+
+/* header Button css */
+
+.header-button{
+    padding-left: 20px;
+}
+.btn-white{
+    background-color: #fff;
+    border-color: white;
+    color: blue;
+    padding: 10px 30px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.btn-white:hover{
+    border-color: #fff;
+    color: #fff;
+    font-weight: 600;    
+}
+.btn-white::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 101%;
+    background-color: blue;
+    border-color: blue ;    
+    border-radius: 20px;
+    z-index: -1;
+    transition: .4s;
+}
+.btn-white:hover::after{
+    width: 100%;
+}
+
+/* slider / Banner css */
+
+.Slider-section{
+   
+}
+.slider-content-wrap{
+  
+}
+.slider-content{
+    margin-left: 103px;    
+    
+}
+.slider-content h1{
+    font-size: 40px;   
+    margin-bottom: 20px;
+    font-weight: 600;    
+}
+.slider-content p{
+    font-weight: 600;
+    color: #A5A1B2;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.banner-section{
+    overflow: hidden;
+}
+.banner-image {
+	width: 700px;
+	height: 700px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	top: -160px;
+	left: 32px;
+}
+.banner-image img {
+	width: 100%;
+    height: 100%;
+    z-index: -1;	
+}
+
+/* Banner Botton css */
+
+.btn-primary{    
+    padding: 15px 30px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.btn-primary:hover{
+    border-color: #111;
+    color: #fff;
+    font-weight: 600;
+}
+.btn-primary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #111;
+    border-color: #111;
+    border-radius: 20px;
+    z-index: -1;
+    transition: .3s;
+
+}
+.btn-primary:hover::after{
+    width: 100%;
+}
+
+/* Go Top Botton */
+
+.go-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999999999999;
+}
+.go-top span a{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: blue;
+    color: #fff;    
+    text-align: center;
+    line-height: 50px;
+    
+   
+}
+
+
+
+
